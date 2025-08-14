@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head th:fragment="headerHead">
+    <link rel="stylesheet" th:href="@{/css/style.css}" />
+  </head>
+  <body>
+    <header th:fragment="headerBody">
+      <!-- ロゴ -->
+      <a th:href="@{/}">
+        <img class="header-logo" th:src="@{/images/logo.png}" alt="Logo" />
+      </a>
+      <!-- ナビゲーション -->
+      <nav class="nav-links">
+        <a class="nav-link" th:href="@{/}">ホーム</a>
+        <a class="nav-link" th:href="@{/catch/list}">釣果一覧</a>
+        <a class="nav-link" th:href="@{/catch/form}">新規登録</a>
+      </nav>
+    </header>
+  </body>
+</html>

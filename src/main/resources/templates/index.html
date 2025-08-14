@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head th:replace="fragments/header :: headerHead">
+    <!-- Google Fonts の読み込み -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>トップページ | Arashiro Fishing Okinawa</title>
+  </head>
+  <body>
+    <!-- ヘッダー挿入 -->
+    <div th:replace="fragments/header :: headerBody"></div>
+
+    <!-- メインコンテンツ -->
+    <main class="main-content">
+      <h1>ARASHIRO FISHING !</h1>
+
+      <img
+        th:src="@{/images/ARASHIRO.FISHING.png}"
+        alt="ARASHIRO FISHING Logo"
+        class="hero-image"
+      />
+
+      <p>
+        釣果を記録しよう！
+      </p>
+    </main>
+  </body>
+</html>
