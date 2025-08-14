@@ -23,9 +23,6 @@ public class Catch {
     // 重さ (g)
     private Integer weight;
 
-    // コメント
-    private String comment;
-
     // 引数なしのコンストラクタ
     public Catch() {
     }
